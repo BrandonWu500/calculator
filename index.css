@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.calculator {
+  max-width: 300px;
+  width: 100%;
+  margin: 10vh auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(80px, 1fr));
+  gap: 5px;
+}
+
+.display {
+  grid-column: 1 / -1;
+  height: min(120px, 25vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.prev {
+  color: #ccc;
+}
+
+.cur {
+  font-size: 1.5rem;
+}
